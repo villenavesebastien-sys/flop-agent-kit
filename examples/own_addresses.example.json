@@ -1,0 +1,5 @@
+{
+  "notes": "FICTIONAL example. Copy to own_addresses.json (git-ignored) and list EVERY address you control.",
+  "wallets": ["0x1111111111111111111111111111111111111111", "0x2222222222222222222222222222222222222222"],
+  "miners": ["0x3333333333333333333333333333333333333333"]
+}

@@ -1,0 +1,30 @@
+# Private data: never commit
+own_addresses.json
+*.pem
+*.key
+*.p12
+.env
+.env.*
+identity*
+secrets*
+*-ledger.jsonl
+flopkit-ledger.jsonl
+activity-log*.jsonl
+receipts/
+deals/
+pages/
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+.pytest_cache/
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.scan-extra

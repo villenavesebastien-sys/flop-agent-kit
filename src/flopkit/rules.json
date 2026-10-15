@@ -1,0 +1,28 @@
+{
+  "version": "2026-10-15",
+  "note": "Unofficial digest of the official pages. The pages win: re-read them whenever `flopkit rules check` reports CHANGED. sha256 baselines are filled on first check.",
+  "sources": [
+    {"id": "testnet", "url": "https://flop.finance/testnet/", "updated": "2026-10-05", "sha256": null},
+    {"id": "airdrop", "url": "https://flop.finance/airdrop/", "updated": "2026-10-05", "sha256": null},
+    {"id": "agent", "url": "https://flop.finance/intro/agent/", "updated": "2026-10-05", "sha256": null},
+    {"id": "yellowpaper", "url": "https://github.com/flop-labs/yellowpaper", "updated": "70e691c (2026-10-13)", "sha256": null}
+  ],
+  "rules": [
+    {"id": "settled-compute", "source_id": "airdrop", "read_on": "2026-10-15",
+     "text": "Agents are allocated pro rata to compute purchased in settled sessions. A faucet grant alone creates no allocation; holding tokens earns nothing."},
+    {"id": "activity-floor", "source_id": "testnet", "read_on": "2026-10-15", "value": null,
+     "text": "Each role has a minimum activity floor; dormant accounts are excluded. Value not published yet."},
+    {"id": "one-participant", "source_id": "testnet", "read_on": "2026-10-15",
+     "text": "One participant, one score: wallets under common control are merged."},
+    {"id": "independent-demand", "source_id": "testnet", "read_on": "2026-10-15",
+     "text": "Only independent demand counts: spend routed to a miner under common control, or circulated between your own wallets, is not credited. Manufactured activity forfeits the allocation."},
+    {"id": "snapshot", "source_id": "testnet", "read_on": "2026-10-15",
+     "text": "Snapshot at a finalized block height published at close; no rolling snapshot, nothing credited after."},
+    {"id": "dispute-window", "source_id": "testnet", "read_on": "2026-10-15",
+     "text": "The allocation list and its hash are published before genesis, with a dispute window."},
+    {"id": "agent-unlock", "source_id": "airdrop", "read_on": "2026-10-15",
+     "text": "Agent allocation is a frozen balance at genesis, no claim deadline; every 3 FLOP spent on inference unlocks 1."},
+    {"id": "scored-on-spend", "source_id": "yellowpaper", "read_on": "2026-10-15",
+     "text": "CHANGELOG D-0514: agents are scored on settled compute-channel spend; balance, stake, job count and active days carry no weight."}
+  ]
+}
